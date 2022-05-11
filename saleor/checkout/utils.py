@@ -78,7 +78,8 @@ def check_variant_in_stock(
     line_quantity = 0 if line is None else line.quantity
 
     new_quantity = quantity if replace else (quantity + line_quantity)
-
+    print(1)
+    print(2)
     if new_quantity < 0:
         raise ValueError(
             "%r is not a valid quantity (results in %r)" % (quantity, new_quantity)
