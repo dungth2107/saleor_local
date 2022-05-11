@@ -15,6 +15,7 @@ def get_address_form(data, country_code, initial=None, instance=None, **kwargs):
     if country_code:
         initial["phone"] = "+{}".format(country_code_for_region(country_code))
         print(123213)
+        print(44444)
 
     address_form_class = get_address_form_class(country_code)
 
